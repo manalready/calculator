@@ -1,3 +1,4 @@
+
 """
 Task: Hundred Student Records - Filtering with Loops and Conditionals
 
@@ -42,115 +43,7 @@ Low Performers: 299,243
 
 
 e.g. 
-All High# Initialize empty dictionaries for each group
-high_performers = {}
-average_performers = {}
-low_performers = {}
-
-# Loop through each student record
-for student in students:
-    student_id = student['id']
-    name = student['name']
-    score = student['score']
-
-    # Classify students into groups based on scores
-    if score >= 70:
-        high_performers[student_id] = (name, score)
-    elif 50 <= score < 70:
-        average_performers[student_id] = (name, score)
-    else:
-        low_performers[student_id] = (name, score)
-
-# Print summary report
-print(f"High Performers: {len(high_performers)}")
-print(f"Average Performers: {len(average_performers)}")
-print(f"Low Performers: {len(low_performers)}")
-
-# Print each category
-print("\nAll High Performers:")
-for student_id, (name, score) in high_performers.items():
-    print({student_id: (name, score)})
-
-print("\nAll Average Performers:")
-for student_id, (name, score) in average_performers.items():
-    print({student_id: (name, score)})
-
-print("\nAll Low Performers:")
-for student_id, (name, score) in low_performers.items():
-    print({student_id: (name, score)})
-# Initialize empty dictionaries for each group
-high_performers = {}
-average_performers = {}
-low_performers = {}
-
-# Loop through each student record
-for student in students:
-    student_id = student['id']
-    name = student['name']
-    score = student['score']
-
-    # Classify students into groups based on scores
-    if score >= 70:
-        high_performers[student_id] = (name, score)
-    elif 50 <= score < 70:
-        average_performers[student_id] = (name, score)
-    else:
-        low_performers[student_id] = (name, score)
-
-# Print summary report
-print(f"High Performers: {len(high_performers)}")
-print(f"Average Performers: {len(average_performers)}")
-print(f"Low Performers: {len(low_performers)}")
-
-# Print each category
-print("\nAll High Performers:")
-for student_id, (name, score) in high_performers.items():
-    print({student_id: (name, score)})
-
-print("\nAll Average Performers:")
-for student_id, (name, score) in average_performers.items():
-    print({student_id: (name, score)})
-
-print("\nAll Low Performers:")
-for student_id, (name, score) in low_performers.items():
-    print({student_id: (name, score)})
-# Initialize empty dictionaries for each group
-high_performers = {}
-average_performers = {}
-low_performers = {}
-
-# Loop through each student record
-for student in students:
-    student_id = student['id']
-    name = student['name']
-    score = student['score']
-
-    # Classify students into groups based on scores
-    if score >= 70:
-        high_performers[student_id] = (name, score)
-    elif 50 <= score < 70:
-        average_performers[student_id] = (name, score)
-    else:
-        low_performers[student_id] = (name, score)
-
-# Print summary report
-print(f"High Performers: {len(high_performers)}")
-print(f"Average Performers: {len(average_performers)}")
-print(f"Low Performers: {len(low_performers)}")
-
-# Print each category
-print("\nAll High Performers:")
-for student_id, (name, score) in high_performers.items():
-    print({student_id: (name, score)})
-
-print("\nAll Average Performers:")
-for student_id, (name, score) in average_performers.items():
-    print({student_id: (name, score)})
-
-print("\nAll Low Performers:")
-for student_id, (name, score) in low_performers.items():
-    print({student_id: (name, score)})
- Performers: [{1: ("student1", 100)}, {32: ("student32", 90)}, ..... continously]
+All High Performers: [{1: ("student1", 100)}, {32: ("student32", 90)}, ..... continously]
 All Average Performers: [{1: ("student1", 100)}, {32: ("student32", 90)}, ..... continously]
 All Low Performers: [{1: ("student1", 100)}, {32: ("student32", 90)}, ..... continously]
 """
@@ -180,6 +73,7 @@ for student in students:
 print(f"High Performers: {len(high_performers)}")
 print(f"Average Performers: {len(average_performers)}")
 print(f"Low Performers: {len(low_performers)}")
+
 
 print("\nAll High Performers:")
 for student_id, (name, score) in high_performers.items():
